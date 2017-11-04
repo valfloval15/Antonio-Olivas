@@ -23,12 +23,43 @@
 			font-family: helvetica;
 			font-weight: lighter;
 			font-size: 50%;
+		}	
+		body{
+			height: 100%;
 		}
+	
+ #antonio{
+	height: 100%;
+	float: left;
+    position: relative;
+    -webkit-animation: mymove 3s;  /* Safari 4.0 - 8.0 */
+    -webkit-animation-fill-mode: forwards; /* Safari 4.0 - 8.0 */
+    animation: mymove 3s;
+    animation-fill-mode: forwards;
+}
+
+/* Safari 4.0 - 8.0 */
+@-webkit-keyframes mymove {
+    from {left: 0px;}
+    to {left: 200px;}
+}
+
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 200px;}
+}
+	#logos{
+			align-content: center;
+			float: right;
+			padding: 50px 100px 0px 0px;
+			margin: 0px 25px 0px 0px;
+		}
+		
  </style>
 
 </head>
 
-<body background="web_Tony_Fondo.png">
+<body bgcolor="white">
 
 	<nav>
 		<div class="nav-wrapper black">
@@ -39,8 +70,8 @@
 				<li><a href="Curriculum.html">Curriculum<span class="red-text">.</span></a></li>
 				<li><a href="Empleador.html">Empleador<span class="red-text">.</span></a></li>
 				<li><a href="Galeria.html">Galería<span class="red-text">.</span></a></li>
-				<li><a href="Clientes.html">Clientes<span class="red-text">.</span></a></li>
-				<li><a href="Contacto.html">Contactanos<span class="red-text">.</span></a></li>
+				<li><a href="Clientes.html"><span class="red-text">Clientes</span><span class="red-text">.</span></a></li>
+				<li><a href="Contacto.html">Contáctanos<span class="red-text">.</span></a></li>
 				<li><a href="https://www.instagram.com/antoniolivasdesign/"><i class="fa fa-instagram" aria-hidden="true" style="color: red;"></i></a></li>
 				<li><a href="https://www.facebook.com/AntonioOlivasDisign/"><i class="fa fa-facebook-official" aria-hidden="true" style="color: red;"></i></a></li>
 			</ul>
@@ -50,18 +81,31 @@
 						<img src="file:///Macintosh HD/Users/valeriafloresvalles/Downloads/images/office.jpg">
 					</div>
 				</div></li>
-				<li><a href="background.html">Inicio</a></li>
-				<li><a href="#">Curriculum</a></li>
-				<li><a href="#">Empleador</a></li>
-				<li><a href="#">Galeria</a></li>
-				<li><a href="#">Clientes</a></li>
-				<li><a href="#">Contactanos</a></li>
+				<li><a href="background.html">Inicio<span class="red-text">.</span></a></li>
+				<li><a href="Curriculum.html">Curriculum<span class="red-text">.</span></a></li>
+				<li><a href="Empleador.html">Empleador<span class="red-text">.</span></a></li>
+				<li><a href="Galeria.html">Galería<span class="red-text">.</span></a></li>
+				<li><a href="Clientes.html"><span class="red-text">Clientes</span><span class="red-text">.</span></a></li>
+				<li><a href="Contacto.html">Contáctanos<span class="red-text">.</span></a></li>
 			</ul>
 			<a href="#" data-activates="slide-out" class="button-collapse"><i class="fa fa-bars" aria-hidden="true"></i>
 			</a>
 		</div>
 	</nav>
-	
+
+	<img id="antonio" src="ANTO NIO OLIVAS DES IGN.png" >
+
+	<div id="logos" align="center">
+	<ul id="staggered-test">
+		<li class style="transform: translateX(0px); opacity: 1;"><img height="25%" src="N U E S T R o s C L I E N T E S.png"></li>
+		<li class style="transform: translateX(0px); opacity: 1;"><img src="Logos1.png"></li>
+		<li class style="transform: translateX(0px); opacity: 1;"><img src="Logos2.png"></li>
+		<li class style="transform: translateX(0px); opacity: 1;"><img src="Logos 3.png"></li>
+		<li class style="transform: translateX(0px); opacity: 1;"><img src="Logos 4.png"></li>
+		<li class style="transform: translateX(0px); opacity: 1;"><img src="Logos 5.png"></li>
+		<li class style="transform: translateX(0px); opacity: 1;"><img src="Logos 6.png"></li>
+	</ul>
+	</div>
      
 	
 	<!--Import jQuery before materialize.js-->
@@ -73,7 +117,7 @@
 	$(".button-collapse").sideNav();
   // Initialize collapsible (uncomment the line below if you use the dropdown variation)
   //$('.collapsible').collapsible();
-  
+ var options = [ {selector: '#staggered-test', offset: 50, callback: function(el) {  } }, {selector: '#staggered-test', offset: 205, callback: function(el) {  } }, {selector: '#staggered-test', offset: 400, callback: function(el) { Materialize.showStaggeredList($(el)); } }, {selector: '#image-test', offset: 500, callback: function(el) { Materialize.fadeInImage($(el)); } } ]; Materialize.scrollFire(options); 
 </script>
 
 
