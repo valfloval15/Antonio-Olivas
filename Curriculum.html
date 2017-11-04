@@ -16,20 +16,21 @@
  		height: 100%;
  	}
 
-		.container {
-			width: 30%;
-		}	
-		li{
-			font-family: helvetica;
-			font-weight: lighter;
-			font-size: 50%;
-		}	
-		.fototony{
-			height: 100%;
-		}
-		body{
-			height: 100%;
-		}
+ 	.container {
+ 		width: 30%;
+ 	}	
+ 	li{
+ 		font-family: helvetica;
+ 		font-weight: lighter;
+ 		font-size: 50%;
+ 	}	
+ 	.fototony{
+ 		height: 100%;
+ 	}
+ 	body{
+ 		height: 100%;
+ 	}
+
  </style>
 
 </head>
@@ -67,7 +68,27 @@
 			</a>
 		</div>
 	</nav>
-	<img class="fototony" src="FotoCurriculum.png">
+	<div class="row" style="height: 100%; margin-bottom: 0px;">	
+		<div class="col s5" style=" padding-left: 0px;"">
+			<img class="fototony responsive-img" src="FotoCurriculum.png" style="max-width: 100%;max-height: 80%">
+		</div>
+		<div class="container col s7">
+			<div class="row">
+				<div class="col s12 center">
+					<img src="curriculum-vitae.png" class="responsive-img" width="60%" style="margin-top: 6%">
+				</div>
+			</div>
+			<hr width="70%" style="height: 3px; background-color: white; border-color: black; border-radius: 4px;">
+			<div class="row">
+				<div class="col s4 center" id="logoCurriculum">
+					<img src="logo.png" class="responsive-img" style="margin-top: 6%">
+				</div>
+				<div class="col s6" style="border-left: 1px solid red; margin-top: 5%">
+					<p class="white-text">Próximo a egresar de la Licenciatura en diseño gráfico por el Instituto de Arquitectura Diseño y Arte en la Universidad Autónoma de Ciudad Juárez. </p>
+				</div>
+			</div>
+		</div>
+	</div>
 
 	<!--Import jQuery before materialize.js-->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
