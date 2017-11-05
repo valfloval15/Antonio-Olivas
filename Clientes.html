@@ -41,12 +41,12 @@
 /* Safari 4.0 - 8.0 */
 @-webkit-keyframes mymove {
     from {left: 0px;}
-    to {left: 200px;}
+    to {left: 10%;}
 }
 
 @keyframes mymove {
     from {left: 0px;}
-    to {left: 200px;}
+    to {left: 10%;}
 }
 	#logos{
 			align-content: center;
@@ -117,7 +117,7 @@
 	$(".button-collapse").sideNav();
   // Initialize collapsible (uncomment the line below if you use the dropdown variation)
   //$('.collapsible').collapsible();
- var options = [ {selector: '#staggered-test', offset: 50, callback: function(el) {  } }, {selector: '#staggered-test', offset: 205, callback: function(el) {  } }, {selector: '#staggered-test', offset: 400, callback: function(el) { Materialize.showStaggeredList($(el)); } }, {selector: '#image-test', offset: 500, callback: function(el) { Materialize.fadeInImage($(el)); } } ]; Materialize.scrollFire(options); 
+ var options = [ {selector: '#staggered-test', offset: 50, callback: function(el) {  } }, {selector: '#staggered-test', offset: 0, callback: function(el) {  } }, {selector: '#staggered-test', offset: 400, callback: function(el) { Materialize.showStaggeredList($(el)); } }, {selector: '#image-test', offset: 500, callback: function(el) { Materialize.fadeInImage($(el)); } } ]; Materialize.scrollFire(options); 
 </script>
 
 

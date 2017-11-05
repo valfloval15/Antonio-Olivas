@@ -31,9 +31,22 @@
  		margin: 0px;
  	}
  	.bar{
- 		margin-top: 3%;
+ 		margin-top: 1%;
  	}
-
+ 	.bar1{
+ 		background-color: white;
+ 		width: 1%; 
+ 		height: 6px;
+ 		border-top-right-radius: 5px;
+ 		border-bottom-right-radius: 5px;
+ 	}
+ 	.bar2{
+ 		background-color: white;
+ 		width: 1%; 
+ 		height: 6px;
+ 		border-top-right-radius: 5px;
+ 		border-bottom-right-radius: 5px;
+ 	}
  </style>
 
 </head>
@@ -105,7 +118,7 @@
 							<img src="photoshop.png" class="responsive-img" width="50%">
 						</div>
 						<div class="col s10 bar">
-							<div style="background-color: white; width: 90%; height: 6px; border-top-right-radius: 5px;border-bottom-right-radius: 5px;"></div>
+							<div class="bar1"></div>
 						</div>
 					</div>
 					<div class="row IconoSoftware">
@@ -113,7 +126,7 @@
 							<img src="illustrator.png" class="responsive-img" width="50%">
 						</div>
 						<div class="col s10 bar">
-							<div style="background-color: white; width: 90%; height: 6px; border-top-right-radius: 5px;border-bottom-right-radius: 5px;"></div>
+							<div class="bar1"></div>
 						</div>
 					</div>
 					<div class="row IconoSoftware">
@@ -121,7 +134,7 @@
 							<img src="AfterEffects.png" class="responsive-img" width="50%">
 						</div>
 						<div class="col s10 bar">
-							<div style="background-color: white; width: 90%; height: 6px; border-top-right-radius: 5px;border-bottom-right-radius: 5px;"></div>
+							<div class="bar1"></div>
 						</div>
 					</div>
 					<div class="row IconoSoftware">
@@ -129,7 +142,7 @@
 							<img src="Premiere.png" class="responsive-img" width="50%">
 						</div>
 						<div class="col s10 bar">
-							<div style="background-color: white; width: 80%; height: 6px; border-top-right-radius: 5px;border-bottom-right-radius: 5px;"></div>
+							<div class="bar2"></div>
 						</div>
 					</div>
 					<hr>
@@ -159,7 +172,15 @@
 	$(".button-collapse").sideNav();
   // Initialize collapsible (uncomment the line below if you use the dropdown variation)
   //$('.collapsible').collapsible();
+
   
+  $( ".bar1" ).animate({
+  	width: "90%"
+  }, 2000);
+  $( ".bar2" ).animate({
+  	width: "80%"
+  }, 2000);
+
 </script>
 
 
