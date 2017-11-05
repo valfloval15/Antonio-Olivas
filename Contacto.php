@@ -1,43 +1,41 @@
- <!DOCTYPE html>
- <html>
- <head>
+<html>
+<head>
 
- 	<title>Antonio Olivas</title>
- 	<!--Import Google Icon Font-->
- 	<script src="https://use.fontawesome.com/fa605f432e.js"></script>
- 	<!--Import materialize.css-->
- 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+	<title>Antonio Olivas</title>
+	<!--Import Google Icon Font-->
+	<script src="https://use.fontawesome.com/fa605f432e.js"></script>
+	<!--Import materialize.css-->
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
 
- 	<!--Let browser know website is optimized for mobile-->
- 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
- 	<style type="text/css">
+	<!--Let browser know website is optimized for mobile-->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<style type="text/css">
 
- 	html{
- 		height: 100%;
- 	}
+	html{
+		height: 100%;
+	}
 
- 	.container {
- 		width: 30%;
- 	}	
- 	li{
- 		font-family: helvetica;
- 		font-weight: lighter;
- 		font-size: 50%;
- 	}	
- 	.input-field label {
- 		color: white	;
- 	}
- 	#map {
- 		height: 400px;
- 		background-color: grey;
- 	}
+	.container {
+		width: 30%;
+	}	
+	li{
+		font-family: helvetica;
+		font-weight: lighter;
+		font-size: 50%;
+	}	
+	.input-field label {
+		color: white	;
+	}
+	#map {
+		height: 400px;
+		background-color: grey;
+	}
 
- </style>
+</style>
 
 </head>
 
 <body background="web_Tony_Fondo.png">
-
 	<nav>
 		<div class="nav-wrapper black">
 			<p href="#!" class="brand-logo flow-text hide-on-small-only" style="margin: 0px;"><span class="grey-text">Antoni</span>Olivas Design+Creative<span class="red-text">.</span></p>
@@ -48,7 +46,7 @@
 				<li><a href="Empleador.html">Empleador<span class="red-text">.</span></a></li>
 				<li><a href="Galeria.html">Galeria<span class="red-text">.</span></a></li>
 				<li><a href="Clientes.html">Clientes<span class="red-text">.</span></a></li>
-				<li><a href="Contacto.html"><span class="red-text">Contáctanos</span><span class="red-text">.</span></a></li>
+				<li><a href="Contacto.php"><span class="red-text">Contáctanos</span><span class="red-text">.</span></a></li>
 				<li><a href="https://www.instagram.com/antoniolivasdesign/"><i class="fa fa-instagram" aria-hidden="true" style="color: red;"></i></a></li>
 				<li><a href="https://www.facebook.com/AntonioOlivasDisign/"><i class="fa fa-facebook-official" aria-hidden="true" style="color: red;"></i></a></li>
 			</ul>
@@ -63,14 +61,12 @@
 				<li><a href="Empleador.html">Empleador<span class="red-text">.</span></a></li>
 				<li><a href="Galeria.html">Galeria<span class="red-text">.</span></a></li>
 				<li><a href="Clientes.html">Clientes<span class="red-text">.</span></a></li>
-				<li><a href="Contacto.html">Contactanos<span class="red-text">.</span></a></li>
+				<li><a href="Contacto.php">Contactanos<span class="red-text">.</span></a></li>
 			</ul>
 			<a href="#" data-activates="slide-out" class="button-collapse"><i class="fa fa-bars" aria-hidden="true"></i>
 			</a>
 		</div>
 	</nav>
-	
-
 	<div class="row">
 		<div class="col s7 offset-s1">
 			<form method="GET">
