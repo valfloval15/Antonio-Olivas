@@ -32,6 +32,11 @@
 			padding-top: 8%;
 		}
 		
+		#galeria{
+			align-content: center;
+			padding-top: 6%;
+		}
+	<link rel="stylesheet" type="text/css" href="jquery.fancybox.min.css">
  </style>
 
 </head>
@@ -71,20 +76,36 @@
 	</nav>
 	
 	<h1 align="center">G A L E R Í A</h1>
-	
-	
-	
-
-	
+<div id="galeria" class="row inline">
+	<div class= "col s2 offset-s2">
+		<a href="Galeria/Practicas/Delrio_fb_loteria2.jpg" data-fancybox style="width: 100%">
+		<img src="Galeria/Practicas/Delrio_fb_loteria2.jpg" alt=""style="width: 100%">
+		</a>
+	</div>
+	<div class= "col s2 offset-s1">
+		<a href="Galeria/Freelance/señor-sushi.jpg" style="width: 100%">
+		<img src="Galeria/Freelance/señor-sushi.jpg" alt=""style="width: 100%">
+		</a>
+	</div>
+	<div class= "col s2 offset-s1">
+	<a href="Galeria/convocatoria/portada.jpg" style="width: 100%">
+		<img src="Galeria/convocatoria/portada.jpg" alt=""style="width: 100%">
+		</a>
+	</div>
+	</div>
 	<!--Import jQuery before materialize.js-->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-
+	<script src="jquery.fancybox.min.js"></script>
 	<script type="text/javascript">
 	// Initialize collapse button
 	$(".button-collapse").sideNav();
   // Initialize collapsible (uncomment the line below if you use the dropdown variation)
   //$('.collapsible').collapsible();
+$("[data-fancybox]").fancybox({
+		// Enable keyboard navigation
+    keyboard : true,
+	});
 
 </script>
 
