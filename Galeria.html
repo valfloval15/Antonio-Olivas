@@ -36,7 +36,13 @@
 
  	#galeria{
  		align-content: center;
- 		padding-top: 6%;
+ 		padding-top: 3%;
+ 		margin-bottom: 0px;
+ 	}
+ 	.Practicas {
+ 		width: 100px;
+ 		height: 100px;
+ 		position: relative;
  	}
  	<link rel="stylesheet" type="text/css" href="jquery.fancybox.min.css">
  </style>
@@ -62,7 +68,6 @@
 			<ul id="slide-out" class="side-nav">
 				<li><div class="user-view">
 					<div class="background">
-						<img src="file:///Macintosh HD/Users/valeriafloresvalles/Downloads/images/office.jpg">
 					</div>
 				</div></li>
 				<li><a href="background.html">Inicio<span class="red-text">.</span></a></li>
@@ -79,22 +84,46 @@
 	
 	<h1 align="center">G A L E R Í A</h1>
 	<div id="galeria" class="row inline">
-		<div class= "col s2 offset-s2">
-			<a href="Galeria/Practicas/Delrio_fb_loteria2.jpg" data-fancybox="Practicas" style="width: 100%">
-				<img src="Galeria/Practicas/Delrio_fb_loteria2.jpg" alt=""style="width: 100%">
+		<div class= "col s2 offset-s2 Practicas">
+			<img src="Galeria/practicas.png" id="practicas" alt="" style="width: 100%">
+			<a href="Galeria/Practicas/Delrio_fb_loteria2.jpg" data-fancybox="Practicas" style="width: 100%;">
+				<img src="Galeria/Practicas/Delrio_fb_loteria2.jpg" id="practicas" alt="" style="width: 100%">
 			</a>
 			<a href="Galeria/Practicas/Delrio_fb_loteria1.jpg" hidden data-fancybox="Practicas" style="width: 100%">
 				<img src="Galeria/Practicas/Delrio_fb_loteria1.jpg" alt=""style="width: 100%">
 			</a>
 		</div>
-		<div class= "col s2 offset-s1">
-			<a href="Galeria/Freelance/señor-sushi.jpg" data-fancybox style="width: 100%">
-				<img src="Galeria/Freelance/señor-sushi.jpg" alt=""style="width: 100%">
+		<div class= "col s2 offset-s1 Freelance">
+			<img src="Galeria/freelance.png" id="practicas" alt="" style="width: 100%">
+			<a href="Galeria/Freelance/señor-sushi.jpg" data-fancybox="Freelance" style="width: 100%">
+				<img src="Galeria/Freelance/señor-sushi.jpg" alt="" style="width: 100%">
+			</a>
+			<a href="Galeria/Freelance/Patrocinadores_DIF.jpg" hidden data-fancybox="Freelance" style="width: 100%">
+				<img src="Galeria/Freelance/Patrocinadores_DIF.jpg" alt="" style="width: 100%">
+			</a>
+			<a href="Galeria/Freelance/onigiri-01.png" hidden data-fancybox="Freelance" style="width: 100%">
+				<img src="Galeria/Freelance/onigiri-01.png" alt="" style="width: 100%">
+			</a>
+			<a href="Galeria/Freelance/Gif-Vickyñas.gif" hidden data-fancybox="Freelance" style="width: 100%">
+				<img src="Galeria/Freelance/Gif-Vickyñas.gif" alt="" style="width: 100%">
+			</a>
+			<a href="Galeria/Freelance/Vemas_logo JPG.jpg" hidden data-fancybox="Freelance" style="width: 100%">
+				<img src="Galeria/Freelance/Vemas_logo JPG.jpg" alt="" style="width: 100%">
+			</a>
+			<a hidden data-fancybox="Freelance" data-type="iframe" data-src="https://www.youtube.com/embed/v3o8yGEvZI8?rel=0&amp;controls=0&amp;showinfo=0" href="javascript:;">
+				<img src="Galeria/youtube.png" alt="" style="width: 100%">
 			</a>
 		</div>
-		<div class= "col s2 offset-s1">
-			<a href="Galeria/convocatoria/portada.jpg" data-fancybox style="width: 100%">
-				<img src="Galeria/convocatoria/portada.jpg" alt=""style="width: 100%">
+		<div class= "col s2 offset-s1 convocatoria">
+			<img src="Galeria/convocatorias.png" id="practicas" alt="" style="width: 100%">
+			<a href="Galeria/convocatoria/IZZI slogan4.jpg" data-fancybox="convocatoria" style="width: 100%">
+				<img src="Galeria/convocatoria/portada.jpg" alt="" style="width: 100%">
+			</a>
+			<a href="Galeria/convocatoria/Fundación Aquae_Revolución de las ideas.jpg" hidden data-fancybox="convocatoria" style="width: 100%">
+				<img src="Galeria/convocatoria/Fundación Aquae_Revolución de las ideas.jpg" alt="" style="width: 100%">
+			</a>
+			<a href="Galeria/convocatoria/Lohechoenmexico.jpg" hidden data-fancybox="convocatoria" style="width: 100%">
+				<img src="Galeria/convocatoria/Lohechoenmexico.jpg" alt="" style="width: 100%">
 			</a>
 		</div>
 	</div>
@@ -111,6 +140,15 @@
 		// Enable keyboard navigation
 		keyboard : true,
 	});
+
+  $('#practicas').hover( function(){
+  	$('#practicas-hover').css("z-index",10);
+  });
+  $('#practicas-hover').hover( function(){
+
+  },function(){
+  	$('#practicas-hover').css("z-index",-10);
+  });
 
 </script>
 
