@@ -13,45 +13,29 @@
  	<style type="text/css">
 
  	html{
- 		height: 100%;
+ 		height: 100vh;
  	}
-
-		.container {
-			width: 30%;
-		}	
-		li{
+	li{
 			font-family: helvetica;
 			font-weight: lighter;
 			font-size: 50%;
-		}	
-		h1{
-			font-family:"Gill Sans", "Gill Sans MT", "Myriad Pro", "DejaVu Sans Condensed", Helvetica, Arial, "sans-serif";
-			color: white;
-			font-weight: bolder;
-			font-size: 700%;
-			padding-top: 8%;
 		}
-		
-		#galeria{
-			align-content: center;
-			padding-top: 6%;
-		}
-	<link rel="stylesheet" type="text/css" href="jquery.fancybox.min.css">
+
  </style>
 
 </head>
 
-<body background="bgGaleria.png">
+<body background="web_Tony_Fondo.png">
 
 	<nav>
 		<div class="nav-wrapper black">
 			<p href="#!" class="brand-logo flow-text hide-on-small-only" style="margin: 0px;"><span class="grey-text">Antoni</span>Olivas Design+Creative<span class="red-text">.</span></p>
 			<p href="#!" class="brand-logo flow-text show-on-small hide-on-med-and-up" style="margin: 0px;"><span class="grey-text">Antoni</span>Olivas<span class="red-text">.</span></p>
 			<ul class="right hide-on-med-and-down">
-				<li><a href="index.html">Inicio<span class="red-text">.</span></a></li>
+				<li><a href="index.html"><span class="red-text">Inicio</span><span class="red-text">.</span></a></li>
 				<li><a href="curriculum.html">Curriculum<span class="red-text">.</span></a></li>
 				<li><a href="Empleador.html">Empleador<span class="red-text">.</span></a></li>
-				<li><a href="galeria.html"><span class="red-text">Galeria.</span></a></li>
+				<li><a href="galeria.html">Galeria<span class="red-text">.</span></a></li>
 				<li><a href="clientes.html">Clientes<span class="red-text">.</span></a></li>
 				<li><a href="contacto.php">Contactanos<span class="red-text">.</span></a></li>
 				<li><a href="https://www.instagram.com/antoniolivasdesign/"><i class="fa fa-instagram" aria-hidden="true" style="color: red;"></i></a></li>
@@ -63,50 +47,34 @@
 						<img src="file:///Macintosh HD/Users/valeriafloresvalles/Downloads/images/office.jpg">
 					</div>
 				</div></li>
-				<li><a href="background.html">Inicio<span class="red-text">.</span></a></li>
-				<li><a href="Curriculum.html">Curriculum<span class="red-text">.</span></a></li>
+				<li><a href="index.html"><span class="red-text">Inicio</span><span class="red-text">.</span></a></li>
+				<li><a href="curriculum.html">Curriculum<span class="red-text">.</span></a></li>
 				<li><a href="Empleador.html">Empleador<span class="red-text">.</span></a></li>
-				<li><a href="Galeria.html"><span class="red-text">Galería</span><span class="red-text">.</span></a></li>
-				<li><a href="Clientes.html">Clientes<span class="red-text">.</span></a></li>
-				<li><a href="Contacto.html">Contactanos<span class="red-text">.</span></a></li>
+				<li><a href="galeria.html">Galeria<span class="red-text">.</span></a></li>
+				<li><a href="clientes.html">Clientes<span class="red-text">.</span></a></li>
+				<li><a href="contacto.php">Contactanos<span class="red-text">.</span></a></li>
 			</ul>
 			<a href="#" data-activates="slide-out" class="button-collapse"><i class="fa fa-bars" aria-hidden="true"></i>
 			</a>
 		</div>
 	</nav>
-	
-	<h1 align="center">G A L E R Í A</h1>
-<div id="galeria" class="row inline">
-	<div class= "col s2 offset-s2">
-		<a href="Galeria/Practicas/Delrio_fb_loteria2.jpg" data-fancybox style="width: 100%">
-		<img src="Galeria/Practicas/Delrio_fb_loteria2.jpg" alt=""style="width: 100%">
-		</a>
-	</div>
-	<div class= "col s2 offset-s1">
-		<a href="Galeria/Freelance/señor-sushi.jpg" style="width: 100%">
-		<img src="Galeria/Freelance/señor-sushi.jpg" alt=""style="width: 100%">
-		</a>
-	</div>
-	<div class= "col s2 offset-s1">
-	<a href="Galeria/convocatoria/portada.jpg" style="width: 100%">
-		<img src="Galeria/convocatoria/portada.jpg" alt=""style="width: 100%">
-		</a>
-	</div>
+
+	<div class="carousel carousel-slider" style="height: 90vh;" data-indicators="true">
+		<div class="carousel-item"><video width="100%" src="logo_animado.mp4" autoplay></video></div>
+		<div class="carousel-item" href="#two!"><img src="slide2.png"></div>
+		<div class="carousel-item" href="#three!"><a href="contacto.php" class="waves-effect waves-light btn red center s12 m6 l2" style="position: absolute; top: 70%; left: 60%;">Contactanos</a><img src="slide3.png" style="position: relative;"></div>
+		<div class="carousel-item" href="#four!"><a href="contacto.php" class="waves-effect waves-light btn red center" style="position: absolute; top: 70%; left: 60%;">Contactanos</a><img src="slide4.png"s></div>
 	</div>
 	<!--Import jQuery before materialize.js-->
 	<script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-	<script src="jquery.fancybox.min.js"></script>
+
 	<script type="text/javascript">
 	// Initialize collapse button
 	$(".button-collapse").sideNav();
   // Initialize collapsible (uncomment the line below if you use the dropdown variation)
   //$('.collapsible').collapsible();
-$("[data-fancybox]").fancybox({
-		// Enable keyboard navigation
-    keyboard : true,
-	});
-
+  $('.carousel.carousel-slider').carousel({fullWidth: true});
 </script>
 
 

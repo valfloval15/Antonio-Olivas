@@ -27,7 +27,8 @@
 		color: white	;
 	}
 	#map {
-		height: 400px;
+		height: 100%;
+		max-height: 53.5vh;
 		background-color: grey;
 	}
 
@@ -36,17 +37,18 @@
 </head>
 
 <body background="web_Tony_Fondo.png">
+
 	<nav>
 		<div class="nav-wrapper black">
 			<p href="#!" class="brand-logo flow-text hide-on-small-only" style="margin: 0px;"><span class="grey-text">Antoni</span>Olivas Design+Creative<span class="red-text">.</span></p>
 			<p href="#!" class="brand-logo flow-text show-on-small hide-on-med-and-up" style="margin: 0px;"><span class="grey-text">Antoni</span>Olivas<span class="red-text">.</span></p>
 			<ul class="right hide-on-med-and-down">
-				<li><a href="background.html">Inicio<span class="red-text">.</span></a></li>
-				<li><a href="Curriculum.html">Curriculum<span class="red-text">.</span></a></li>
+				<li><a href="index.html">Inicio<span class="red-text">.</span></a></li>
+				<li><a href="curriculum.html">Curriculum<span class="red-text">.</span></a></li>
 				<li><a href="Empleador.html">Empleador<span class="red-text">.</span></a></li>
-				<li><a href="Galeria.html">Galeria<span class="red-text">.</span></a></li>
-				<li><a href="Clientes.html">Clientes<span class="red-text">.</span></a></li>
-				<li><a href="Contacto.php"><span class="red-text">Contáctanos</span><span class="red-text">.</span></a></li>
+				<li><a href="galeria.html">Galeria<span class="red-text">.</span></a></li>
+				<li><a href="clientes.html">Clientes<span class="red-text">.</span></a></li>
+				<li><a href="contacto.php"><span class="red-text">Contactanos.</span></a></li>
 				<li><a href="https://www.instagram.com/antoniolivasdesign/"><i class="fa fa-instagram" aria-hidden="true" style="color: red;"></i></a></li>
 				<li><a href="https://www.facebook.com/AntonioOlivasDisign/"><i class="fa fa-facebook-official" aria-hidden="true" style="color: red;"></i></a></li>
 			</ul>
@@ -56,19 +58,19 @@
 						<img src="file:///Macintosh HD/Users/valeriafloresvalles/Downloads/images/office.jpg">
 					</div>
 				</div></li>
-				<li><a href="background.html">Inicio<span class="red-text">.</span></a></li>
-				<li><a href="Curriculum.html">Curriculum<span class="red-text">.</span></a></li>
+				<li><a href="index.html">Inicio<span class="red-text">.</span></a></li>
+				<li><a href="curriculum.html">Curriculum<span class="red-text">.</span></a></li>
 				<li><a href="Empleador.html">Empleador<span class="red-text">.</span></a></li>
-				<li><a href="Galeria.html">Galeria<span class="red-text">.</span></a></li>
-				<li><a href="Clientes.html">Clientes<span class="red-text">.</span></a></li>
-				<li><a href="Contacto.php">Contactanos<span class="red-text">.</span></a></li>
+				<li><a href="galeria.html">Galeria<span class="red-text">.</span></a></li>
+				<li><a href="clientes.html">Clientes<span class="red-text">.</span></a></li>
+				<li><a href="contacto.php"><span class="red-text">Contactanos.</span></a></li>
 			</ul>
 			<a href="#" data-activates="slide-out" class="button-collapse"><i class="fa fa-bars" aria-hidden="true"></i>
 			</a>
 		</div>
 	</nav>
-	<div class="row">
-		<div class="col s7 offset-s1">
+	<div class="row" style="margin-bottom: 0px;">
+		<div class="col s8 offset-s1" style="padding-right: 0px;">
 			<form method="GET">
 				<div class="col s5">
 					<div class="input-field col s12">
@@ -90,10 +92,10 @@
 				</div>
 			</form>
 		</div>
-		<div class="col s4">
-
+		<div class="col s3 right" style="padding: 0px;">
+			<img src="horario.png" class="responsive-img right" style="height: 90.2vh">
 		</div>
-		<div class="col s8" id="map">
+		<div class="col s9" id="map" style="padding-right: 0px;">
 		</div>
 	</div>
 </div>
@@ -128,3 +130,16 @@
 
 </body>
 </html>
+
+<?php
+
+if (isset($_GET['nombre']) && isset($_GET['telefono']) && isset($_GET['email']) && isset($_GET['comentarios'])) {
+	$to = "tonyoglez@gmail.com";
+	$subject = "Comentarios Portafolio";
+	$txt = "Nombre: ". $_GET['nombre']. "\n" ."Telefono: " . $_GET['telefono'] . "\n" . "Comentarios:\n" . $_GET['comentarios'];
+	$headers = "From: " . $_GET['email'] . "\r\n";
+
+	mail($to,$subject,$txt,$headers);
+}
+
+?>
