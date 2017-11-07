@@ -70,7 +70,7 @@
 		</div>
 	</nav>
 	<div class="row" style="margin-bottom: 0px;">
-		<div class="col s8 offset-s1" style="padding-right: 0px;">
+		<div class="col s12 m8 offset-s1" style="padding-right: 0px;">
 			<form method="GET">
 				<div class="col s5">
 					<div class="input-field col s12">
@@ -92,10 +92,10 @@
 				</div>
 			</form>
 		</div>
-		<div class="col s3 right" style="padding: 0px;">
+		<div class="col s3 right hide-on-small-only" style="padding: 0px;">
 			<img src="horario.png" class="responsive-img right" style="height: 90.2vh">
 		</div>
-		<div class="col s9" id="map" style="padding-right: 0px;">
+		<div class="col s12 m9" id="map" style="padding-right: 0px;">
 		</div>
 	</div>
 </div>
